@@ -14,12 +14,12 @@ transplantation (allo-HCT) patients at MSKCC, paired with clinical metadata
 
 | Table | Contents |
 |---|---|
-| `tblASVsamples.csv` | Per-sample metadata: `SampleID`, `PatientID`, `DayRelativeToNearestHCT` |
+| `samples/tblASVsamples.csv` | Per-sample metadata: `SampleID`, `PatientID`, `DayRelativeToNearestHCT` |
 | `counts/tblcounts_asv_melt.csv` | Long-format ASV counts: `SampleID`, `ASV`, `Count` |
 | `counts/tblcounts_class_wide.csv` | Class-level abundance table |
 | `counts/tblqpcr.csv` | Total 16S gene copies per sample (see Exercise 4) |
 | `meta_data/tbldrug.csv` | Drug administrations: `PatientID`, drug name/category, start/stop day relative to HCT |
-| `tblASVtaxonomy_silva132_v4v5_filter.csv` | ASV → Kingdom … Genus mapping |
+| `taxonomy/tblASVtaxonomy_silva132_v4v5_filter.csv` | ASV → Kingdom … Genus mapping |
 
 **Linking keys:** `SampleID` connects counts ↔ sample metadata; `PatientID` connects
 samples ↔ drug records across time.
